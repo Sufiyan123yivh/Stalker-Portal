@@ -1,8 +1,8 @@
 <?php
 include "config.php";
 session_start();
-define('ADMIN_PASSWORD', 'JITENDRAUNATTI');
-define('USER_NAME', 'DOCTOR_STRANGE');
+define('ADMIN_PASSWORD', 'sufiyan');
+define('USER_NAME', 'sufiyan');
 if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['password']) && (isset($_POST['username']))) {
@@ -499,5 +499,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
     </script>
 </body>
+
 
 </html>
